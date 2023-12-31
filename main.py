@@ -128,11 +128,7 @@ list_correct_guesses: list = []
 list_or_results: list = []
 score: int = 0
 
-
-
 selected_sentence_backend = get_random_sentence(list_of_sentences)
-
-print(f"selected_sentence_backend = {selected_sentence_backend}")
 selected_sentence_list: str = set_sentence_for_gui(selected_sentence_backend)
 while selected_sentence_backend != selected_sentence_list:
     user_guss = str(input(f"Please enter your guess: {convert_list_str(selected_sentence_list)} ")).lower()
